@@ -1,122 +1,138 @@
 body {
-  background-color: #e8e8e8;
-  margin-bottom: 4%;
-}
-
-.dark {
-  background-color: #3a3a3a;
-  color: #ffffff;
-}
-
-.change {
-  cursor: pointer;
-}
-
-.funky {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 0;
-  /* margin-top: auto; */
-}
-
-.navStyle {
-  background-color: #00af91;
-}
-
-.container-styles{
-  margin: 0.5% auto;
-  /* margin-right:0; */
-}
-.container-content-styles{
   text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+#helpage {
+  font-size: 1.7rem;
+}
+
+.light,
+.light.navbar a {
+  background-color: #ececec;
+  color: #000;
+}
+
+.dark,
+.dark.navbar a {
+  background-color: #1f2329;
+  color: #fff;
+}
+
+.light-neo {
+  background-color: #ececec;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.6),
+    10px 10px 15px rgba(70, 70, 70, 0.1);
+}
+
+.dark-neo {
+  background: #1f2329;
+  box-shadow: 6px 6px 12px #0f111465, -6px -6px 12px #2f353e50;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+/* Navbar  */
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-brand {
+  padding: 15px;
   font-size: 20px;
 }
-.fa{
-  margin: 4% auto;
-  font-size: 25px;
-  cursor: pointer;
-}
-.fa:hover{
-  animation: animationForSearchBar;
-  animation-duration: 0.2s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  border-radius: 4px;
-}
-.weatherForecast {
-  width: 48%;
-  margin: 0 auto;
-  /* padding-top: 50px; */
+
+.nav-item {
+  padding: 0 10px;
+  margin: auto;
 }
 
+#dark-mode-toggle {
+  display: inline-block;
+  padding: 10px;
+}
+
+#dark-mode-toggle-button {
+  display: inline-block;
+}
+
+#settings {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+#salutation {
+  font-size: 2rem;
+}
+
+/* dropdown */
+
+.dropdown-menu.light a {
+  color: rgb(175, 175, 175);
+}
+
+.dropdown-menu.dark a {
+  color: rgb(104, 104, 104);
+}
+
+.dropdown-menu.light a:hover {
+  color: #000;
+}
+
+.dropdown-menu.dark a:hover {
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  /* for dropdown on hover */
+  right: 1px;
+}
+
+/* searchBar */
 .search {
   display: table;
-  margin: 0 auto;
-  width: 50%;
+  margin: 30px auto;
+  width: 45%;
 }
 
-.searchBar:hover {
-  animation: animationForSearchBar;
-  animation-duration: 0.2s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  background-color: #222831c7;
-}
-
-@keyframes animationForSearchBar {
-  from {
-    background-color: #30475e00;
-  }
-
-  to {
-    background-color: #22283148;
-  }
+.searchBar {
+  border: none;
 }
 
 .searchButton {
   display: inline-block;
   cursor: pointer;
-  width: 40%;
+  width: 15%;
+  border: none;
 }
 
-/* .container {
-  margin-top: 3%;
-} */
-
-.bookmarkElement {
+/* icons */
+.icons {
   display: inline-block;
-  border-radius: 15px;
+  margin: 15px;
+  border-radius: 50%;
 }
 
-.icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 60%;
-  border-radius: 15%;
+img {
+  margin: 10px;
 }
 
-.bookmarkElement:hover {
-  animation: animationForHoveringIcon;
-  animation-duration: 0.4s;
-  box-shadow: 100px;
-  animation-fill-mode: forwards;
-  background-color: #222831c7;
+img:hover {
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  transform: scale(1.1, 1.1);
+  transition: all 0.1s ease-in-out;
 }
 
-@keyframes animationForHoveringIcon {
-  from {
-    background-color: #30475e52;
-  }
-
-  to {
-    background-color: #222831c7;
-  }
-}
-
-/* this has been causing misalignments */
-.col-4 {
-  text-align: center;
-  margin: auto;
+/* footer */
+.footer {
+  margin: 40px 0 80px;
+  padding: 10px;
+  font-weight: 100;
 }
